@@ -1,9 +1,7 @@
 import React from 'react';
-import './PageInfo.scss'
-import Logo from '../../../assets/images/logo.png'
-import Button from '../../common/Button/Button'
+import './LoginForm.scss'
 
-const PageInfo = () => {
+const LoginForm = () => {
     return (
         <section>
             <div className="login-section">
@@ -23,9 +21,9 @@ const PageInfo = () => {
                         </p>
 
                         <div className='desc'>Sign In here</div>
-                        <span>
-                            <i class="fa fa-sign-in"></i>
-                        </span>
+                        <button>
+                            <i class="fa fa-sign-in"/>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -34,4 +32,4 @@ const PageInfo = () => {
     );
 };
 
-export default PageInfo;
+export default LoginForm;

@@ -1,16 +1,21 @@
 import React from 'react';
-import PageInfo from '../PageInfo/PageInfo'
-import Header from '../Header/Header';
+import LoginForm from '../LoginForm/LoginForm'
+import Header from '../../common/Header/Header';
+import Socials from '../../common/Socials/Socials'
+
 import './Login.scss'
 
 const Login = () => {
     return (
         <div className='login-page'>
-            {/* <div className='header'>
+            <div className='header'>
                 <Header />
-            </div> */}
+            </div>
             <div className="login-component">
-                <PageInfo/>
+                <LoginForm/>
+            </div>
+            <div className='social-media-accounts'>
+                <Socials/>
             </div>
         </div>
     );

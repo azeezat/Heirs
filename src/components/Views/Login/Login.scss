@@ -1,3 +1,5 @@
+@import '../../../_utilities/variables';
+
 .login-page{
 
     .login-component{
@@ -7,9 +9,14 @@
     .header{
         width: 80%;
         position: absolute;
-        //padding: 2rem;
         top:3%;
-        left:10%;
+        left:$page-padding;
+        z-index: 3;
+    }
+    .social-media-accounts{
+        position: absolute;
+        top:75%;
+        left:12%;
         z-index: 3;
     }
 }
