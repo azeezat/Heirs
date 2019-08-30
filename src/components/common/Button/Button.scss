@@ -1,0 +1,26 @@
+@import '../../../_utilities/variables';
+
+.buttons{
+    cursor: pointer;
+    color: $white;
+    font-size: 1.3rem;
+    padding: 9px 26px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+.green-btn{
+    border: 2px solid $green; 
+    background: $green;
+}
+
+.transparent-btn{
+    border: 2px solid $darkBlue; 
+    background: none;
+    color: $blue;
+}
+
+.dark-blue-btn{
+    border: 2px solid $darkBlue; 
+    background-color: $darkBlue;
+    color: $white;
+}

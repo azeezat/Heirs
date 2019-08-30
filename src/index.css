@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,700,800,400,600,900');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Scrollbar styling */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1C3054;
+  border-radius: 10px;
+  outline: 1px solid none;
+}
