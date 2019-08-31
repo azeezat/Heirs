@@ -23,7 +23,7 @@ const LoginForm = () => {
 
                         <div className='desc'>Sign In here</div>
 
-                        <NavLink href="/instructions">
+                        <NavLink to="/instructions">
                             <button>
                                 <i class="fa fa-sign-in" />
                             </button>
