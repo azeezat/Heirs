@@ -1,0 +1,34 @@
+@import '../../../_utilities/variables';
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    .profile-card-top{
+        text-align: center;
+
+        img{
+            width: auto; 
+            max-width: 300px; 
+            min-height: 250px;
+        }
+    }
+
+    .profile-card-bottom{
+        text-align: center;
+        padding: 0.5rem 1.6rem;
+
+        h1{
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 0rem;
+        }
+        P{
+            font-size: 0.9rem;
+            color:$light-gray;
+        }
+    }
+}

@@ -50,8 +50,30 @@
         margin: 2rem  2rem;
 
         video{
-            background-color: rgb(249, 253, 13);
+            background-image: url('../../../assets/images/woman-drinking-tea.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             width: 100%;
+            position: relative;
+        }
+        .play-video{
+           height: 100px;
+           width: 100px;
+           padding: 2rem;
+           border-radius: 50%;
+           border: 2px solid $white;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           position: absolute;
+           top: 25%;
+           left: 60%;
+        }
+        .play-video:hover{
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            cursor: pointer;
+            background-color: aliceblue;
         }
         h5,h2{
             color: white;

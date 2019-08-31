@@ -1,0 +1,45 @@
+@import '../../../_utilities/variables';
+
+.profile-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 100vh;
+    
+    .profile{
+        display: flex;
+        margin: 5rem;
+        border: 3px solid none;
+        border-radius: 10px;
+        background-color: white;
+        height: 300px;
+
+
+        .profile-left{
+            flex: 1;
+            position: relative;
+
+            .profile-description{
+                position: absolute;
+                top: -1rem;
+                left: 1rem;
+            }
+
+        }
+        .profile-right{
+            flex: 2;
+            align-self: center;
+            h1{
+                font-size: 1rem;
+            }
+            p{
+                padding-right: 2rem;
+                padding-bottom: 1rem;
+                font-size: 1re;
+                color: $light-gray
+            }
+        }
+    }
+}

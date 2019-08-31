@@ -1,5 +1,6 @@
 import React from 'react';
 import './InductionInstructions.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const InductionInstructions = () => {
     return (
@@ -20,6 +21,10 @@ const InductionInstructions = () => {
                 <video>
 
                 </video>
+                <div className='play-video'>
+                    <FontAwesomeIcon icon='play' size="4x" inverse/>
+                </div>
+
                 <h5>Gloria Agugua</h5>
                 <h2>HR Analyst</h2>
             </div>
