@@ -1,6 +1,8 @@
 import React from 'react';
 import './LoginForm.scss'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const LoginForm = () => {
     return (
@@ -25,7 +27,7 @@ const LoginForm = () => {
 
                         <NavLink to="/instructions">
                             <button>
-                                <i class="fa fa-sign-in" />
+                                <FontAwesomeIcon icon="sign-in-alt" inverse pulse/>
                             </button>
                         </NavLink>
 

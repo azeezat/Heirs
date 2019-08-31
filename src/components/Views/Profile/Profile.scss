@@ -40,6 +40,13 @@
                 font-size: 1re;
                 color: $light-gray
             }
+
+            .social{
+                display: flex;
+                span{
+                    padding: 0.5rem;
+                }
+            }
         }
     }
 }

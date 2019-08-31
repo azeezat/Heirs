@@ -3,8 +3,7 @@
 .instructions{
     display: flex;
     background: black;
-    padding: 8rem;
-    height: 100vh;
+    padding: 8rem 7rem 8rem 7rem;
 
     .instructions-left{
         flex: 1;
@@ -18,30 +17,62 @@
 
         h2{
             margin:10px 0;
-            padding-bottom: 2.5rem;
+            padding-bottom: 5rem;
             font-size: 3.5rem;
             color:$red;
             line-height: 0;
         }
 
         q{
+            color: $white;
+            font-size: 1rem;
+            line-height: 0.2;
+            padding-bottom: 2rem;
+        }
+        
+        q:before{
             color: $red;
             font-size: 5rem;
+            line-clamp: 0;
+            content: open-quote ;
             font-family: Arial, Helvetica, sans-serif;
 
-            p{
-                color: $white;
-                font-size: 1rem;
-                padding-left: 2rem;
-                font-family: inherit;
-
-            }
-        }
-        q:before{
-            content: open-quote;
         }
         q:after{
             content: none;
+        }
+
+        .credited-to{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .author-image{
+                flex:1;
+                
+                .circular{
+                    background-color: aqua;
+                    height: 40px;
+                    width: 40px;;
+                    border-radius: 50%;
+                    background-image: url(../../../assets/images/peter-ashade.jpg);
+                    //background-size: contain;
+                    // background-position: center;
+                    background-repeat: no-repeat;
+                }
+                
+            }
+            .author-name{
+                flex: 2;
+                color: white;
+
+                p{
+                    font-weight: 500;
+                }
+                h6{
+                    color: $light-gray;
+                    line-height: 0;
+                }
+            }
         }
     }
 
@@ -62,13 +93,16 @@
            padding: 2rem;
            border-radius: 50%;
            border: 2px solid $white;
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
            position: absolute;
-           top: 25%;
+           top: 30%;
            left: 60%;
+
+           .circle{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background: $white;
+           }
         }
         .play-video:hover{
             transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -85,4 +119,11 @@
            color: rgb(215, 224, 222); 
         }
     }
+}
+
+.centeralize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

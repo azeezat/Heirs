@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 import './InductionInstructions.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -10,20 +11,36 @@ const InductionInstructions = () => {
                 <h2>INDUCTION</h2>
 
                 <q>
-                    <p>
-                        The difference between a successful and <br/>
-                        non-successful leader is the quality of decisions <br/>
-                        you make.
-                    </p>
+                    The difference between a successful and <br/>
+                    non-successful leader is the quality of decisions <br/>
+                    you make.
                 </q>
+
+                <div className="credited-to">
+                    <div className="author-image">
+                        <span className='circular'>
+
+                        </span>
+                    </div>
+                    <div className="author-name">
+                        <p>Tony Elumelu</p>
+                        <h6>Chief Executive officer</h6>
+                    </div>
+                    
+                </div>
             </div>
             <div className="instructions-right">
                 <video>
 
                 </video>
-                <div className='play-video'>
-                    <FontAwesomeIcon icon='play' size="4x" inverse/>
-                </div>
+
+                <NavLink to='/profile'>
+                    <div className='play-video centeralize'>
+                        <div className='circle centeralize'>
+                            <FontAwesomeIcon icon='play' size="2x"/>
+                        </div>
+                    </div>
+                </NavLink>
 
                 <h5>Gloria Agugua</h5>
                 <h2>HR Analyst</h2>

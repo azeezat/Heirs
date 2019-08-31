@@ -71,28 +71,25 @@ section{
             }
             
             button{
-                margin: 1rem;
+                margin: 1rem 0.5rem;
                 height: 40px;
                 width: 40px;
                 border-radius: 50%;
                 background-color: $red;
                 float:right;
                 border: 2px solid transparent;
+            }
 
-                i{
-                    color: white
-                }
-            }
-            
-            .desc{
-                float:right;
-                padding-top: calc(20px)
-            }
-            
             button:hover{
                 background:$dark-gray;
-                color:#fff
+                color:#fff;
+                cursor: pointer;
             }
+            .desc{
+                float:right;
+                padding-top: calc(20px);
+            }
+            
         }
     }
 }

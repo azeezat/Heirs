@@ -6,7 +6,7 @@ const ProfileCard = () => {
     return (
         <div className='profile-card'>
             <div className='profile-card-top'>
-                <img src={PeterAshade}/>
+                <img src={PeterAshade} alt="profile pic"/>
             </div>
             <div className='profile-card-bottom'>
                 <h1>Peter Ashade</h1>

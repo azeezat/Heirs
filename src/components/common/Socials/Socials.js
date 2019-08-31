@@ -5,17 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Socials = () => {
     return (
         <div className='social-media'>
-            <FontAwesomeIcon icon="facebook" size="2x" inverse/>
-
-            <button>
-                <i class="fa fa-facebook" />
-            </button>
-            <button>
-                <i class="fa fa-twitter"/>
-            </button>
-            <button>
-                <i class="fa fa-instagram"/>
-            </button>
+            <span>
+                <FontAwesomeIcon icon={["fab", "facebook"]} size="lg" color="gray"/>
+            </span>
+            <span>
+                <FontAwesomeIcon icon={["fab", "twitter"]} size="lg" color="gray"/>
+            </span>
+            <span>
+                <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" color="gray"/>
+            </span>
         </div>
     );
 };
