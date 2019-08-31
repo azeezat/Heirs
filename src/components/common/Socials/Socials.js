@@ -4,9 +4,15 @@ import './Socials.scss'
 const Socials = () => {
     return (
         <div className='social-media'>
-            <i class="fa fa-facebook" />
-            <i class="fa fa-twitter"/>
-            <i class="fa fa-sign-in"/>
+            <button>
+                <i class="fa fa-facebook" />
+            </button>
+            <button>
+                <i class="fa fa-twitter"/>
+            </button>
+            <button>
+                <i class="fa fa-instagram"/>
+            </button>
         </div>
     );
 };

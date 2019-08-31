@@ -33,6 +33,21 @@
     background-position: center;
     background-size: contain;
     float: left;
+    position: relative;
+
+    .notification{
+      border: none;
+      height: 15px;
+      width: 15px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $red;
+      position: relative;
+      top: 0;
+      left: 30px;
+      color: white;
+      font-size: 0.5rem;
+    }
   }
 }
 

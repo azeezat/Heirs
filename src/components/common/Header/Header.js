@@ -8,7 +8,9 @@ const Header = () => {
             
             <li><a href="#"><img src={Logo}/></a></li>
             <li>
-                <span className='circle'></span>
+                <span className='circle'>
+                    <button className='notification'>5</button>
+                </span>
                 <a href="#">Message From Facilitators</a>
             </li>
         </ul>

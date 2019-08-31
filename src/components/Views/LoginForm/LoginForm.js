@@ -1,5 +1,6 @@
 import React from 'react';
 import './LoginForm.scss'
+import { NavLink } from 'react-router-dom'
 
 const LoginForm = () => {
     return (
@@ -14,16 +15,20 @@ const LoginForm = () => {
                         <h6>Kindly login with your convard credentials</h6>
 
                         <p type="Email Address">
-                            <input placeholder=""/>
+                            <input placeholder="" />
                         </p>
                         <p type="Password">
-                            <input placeholder=""/>
+                            <input placeholder="" />
                         </p>
 
                         <div className='desc'>Sign In here</div>
-                        <button>
-                            <i class="fa fa-sign-in"/>
-                        </button>
+
+                        <NavLink href="/instructions">
+                            <button>
+                                <i class="fa fa-sign-in" />
+                            </button>
+                        </NavLink>
+
                     </form>
                 </div>
             </div>

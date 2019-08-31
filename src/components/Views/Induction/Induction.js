@@ -1,18 +1,18 @@
 import React from 'react';
-import LoginForm from '../LoginForm/LoginForm'
+import InductionInstructions from '../InductionInstructions/InductionInstructions'
 import Header from '../../common/Header/Header';
 import Socials from '../../common/Socials/Socials'
 
-import './Login.scss'
+import './Induction.scss'
 
-const Login = () => {
+const Induction = () => {
     return (
         <div className='login-page'>
             <div className='header'>
                 <Header />
             </div>
             <div className="login-component slidein">
-                <LoginForm/>
+                <InductionInstructions/>
             </div>
             <div className='social-media-accounts'>
                 <Socials/>
@@ -21,4 +21,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Induction;
