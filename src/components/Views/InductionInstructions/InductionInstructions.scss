@@ -26,51 +26,58 @@
         q{
             color: $white;
             font-size: 1rem;
-            line-height: 0.2;
-            padding-bottom: 2rem;
         }
         
         q:before{
+            display: block;
+            height: 12px;
             color: $red;
             font-size: 5rem;
-            line-clamp: 0;
             content: open-quote ;
             font-family: Arial, Helvetica, sans-serif;
+            padding-top: 2rem;
 
         }
         q:after{
             content: none;
         }
 
+        p{
+            padding-left: 2rem;
+        }
+
         .credited-to{
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-left: 3rem;
+
             .author-image{
-                flex:1;
-                
-                .circular{
+                padding-right: 1rem;
+                flex: 10%;
+
+                img{
                     background-color: aqua;
-                    height: 40px;
-                    width: 40px;;
+                    height: 50px;
+                    width:50px;
                     border-radius: 50%;
-                    background-image: url(../../../assets/images/peter-ashade.jpg);
-                    //background-size: contain;
-                    // background-position: center;
+                    border: 2px solid white;
                     background-repeat: no-repeat;
                 }
                 
             }
             .author-name{
-                flex: 2;
+                flex: 90%;
                 color: white;
+                text-align: left;
+                font-size: 0.8rem;
 
                 p{
                     font-weight: 500;
+                    padding: 0;
                 }
-                h6{
+                p:last-child{
                     color: $light-gray;
-                    line-height: 0;
                 }
             }
         }
@@ -80,11 +87,12 @@
         flex: 1;
         margin: 2rem  2rem;
 
-        video{
+        .video{
             background-image: url('../../../assets/images/woman-drinking-tea.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             width: 100%;
+            height: 300px;
             position: relative;
         }
         .play-video{
@@ -94,7 +102,7 @@
            border-radius: 50%;
            border: 2px solid $white;
            position: absolute;
-           top: 30%;
+           top: 34%;
            left: 60%;
 
            .circle{
